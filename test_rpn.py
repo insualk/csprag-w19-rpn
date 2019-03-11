@@ -1,3 +1,4 @@
+#! /anaconda3/bin/python
 import unittest
 
 import rpn
@@ -17,3 +18,16 @@ class TestBasics(unittest.TestCase):
         self.assertEqual(2, result)
     def test_exponential(self):
         result = rpn.calculate("2 2 ^")
+
+def main():
+    test = TestBasics()
+    test.test_add()
+    test.test_subtract()
+    test.test_multiply()
+    test.test_divide()
+    test.test_exponential()
+
+
+
+if __name__ == '__main__':
+    main()
