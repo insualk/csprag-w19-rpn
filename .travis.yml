@@ -5,4 +5,4 @@ install:
   - pip install coverage
 after_script:
   - coverage run test_rpn.py 
-  - coverage reportn -m 
+  - coverage report -m 
